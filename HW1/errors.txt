@@ -1,0 +1,35 @@
+Bad1.java
+lawn-143-215-82-7:Downloads dennislaw$ javac Bad1.java
+Bad1.java:1: error: class BAD1 is public, should be declared in a file named BAD1.java
+public class BAD1 {
+       ^
+1 error
+//Error occurs at compile time.
+//The file name and class name do not match.
+
+
+
+Bad2.java
+lawn-143-215-82-7:Downloads dennislaw$ javac Bad2.java
+lawn-143-215-82-7:Downloads dennislaw$ java Bad2
+This homework is due January Exception in thread "main" java.util.IllegalFormatConversionException: d != java.lang.String
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2938)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2892)
+	at java.base/java.util.Formatter.format(Formatter.java:2673)
+	at java.base/java.io.PrintStream.format(PrintStream.java:1053)
+	at java.base/java.io.PrintStream.printf(PrintStream.java:949)
+	at Bad2.main(Bad2.java:7)
+//Error occurs at runtime
+//month, day, year are strings so should use %s instead of %d
+
+
+
+Bad3.java
+lawn-143-215-82-7:Downloads dennislaw$ javac Bad3.java
+Bad3.java:9: error: reached end of file while parsing
+    }
+     ^
+1 error
+//Error occurs at compile time
+//Missins a } at end
